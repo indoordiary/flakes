@@ -14,7 +14,7 @@
   environment.systemPackages = with pkgs; [
     inconsolata fira-code noto-fonts-cjk-sans nerd-fonts.hurmit
     hyprland  hyprpicker hyprcursor hyprlock hypridle hyprpaper hyprshade hyprshot
-    dwaybar xwaylan waypaper pyprland 
+    waybar xwayland waypaper pyprland 
     waybar tofi fontconfig mako alacritty fish
     wlogout dunst kdePackages.qtwayland libsForQt5.qt5.qtwayland
     wlroots libxkbcommon pango cairo
