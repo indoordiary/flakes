@@ -1,4 +1,4 @@
-{ config, pkgs, lib, puts, ... }:
+{ config, pkgs, lib, iputs, ... }:
 let
   zen-browser-pkg = inputs.zen-browser.packages.${pkgs.system}.beta;
 in
