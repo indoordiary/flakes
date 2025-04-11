@@ -8,8 +8,6 @@
       blacklist radeon
     '';
 
-  boot.initrd.kernelModules = [ "amdgpu" ];
-
   hardware.cpu.amd.updateMicrocode = true;
 
   hardware.graphics = {

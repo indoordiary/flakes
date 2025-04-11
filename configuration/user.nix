@@ -7,7 +7,7 @@
       isNormalUser = true;
       extraGroups = [ "wheel" "audio" "video" "network-manager" "docker" ];
       useDefaultShell = true;
-      initialPassword = "FFFF";
+      initialPassword = "ffff";
     };
   };
 
