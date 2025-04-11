@@ -5,7 +5,7 @@
     mutableUsers = false;
     users.chenhsi = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "audio" "video" "docker" ];
+      extraGroups = [ "wheel" "audio" "video" "network-manager" "docker" ];
       useDefaultShell = true;
       initialPassword = "FFFF";
     };
