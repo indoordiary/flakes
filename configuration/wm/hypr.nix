@@ -11,10 +11,10 @@
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
   services.xserver.displayManager.gdm.enable = true;   
 
-  environment.systemPackages = with pkgs; {
+  environment.systemPackages = with pkgs; [
     waybar tofi fontconfig mako
     inconsolata fira-code noto-fonts-cjk-sans nerd-fonts.hurmit
-  };
+  ];
   
 }
 
