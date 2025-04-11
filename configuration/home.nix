@@ -1,4 +1,4 @@
-{ config, pkgs, lib, iputs, ... }:
+{ config, pkgs, lib, inputs, ... }:
 let
   zen-browser-pkg = inputs.zen-browser.packages.${pkgs.system}.beta;
 in
@@ -26,7 +26,6 @@ in
       obs-text-pthread
     ];
   };
-  
   
   home.activation.installPackages = {
     data = lib.mkForce "";
