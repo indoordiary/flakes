@@ -16,7 +16,7 @@
       enable = true;
       extraPackages = with pkgs; [
         mesa
-        vulkan
+        vulkan-loader
         libva
       ];
       extraPackages32 = with pkgs.pkgsi686Linux; [ mesa vulkan-loader ];
