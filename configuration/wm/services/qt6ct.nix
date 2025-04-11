@@ -1,8 +1,5 @@
 { config, pkgs, lib, ... }:
-  imports = [
-    ./input/fcitx5.nix
-    ./services/qt6ct.nix
-  ];
+
 {
   qt.enable = true;
   qt.platformTheme = lib.mkForce "qt5ct";
