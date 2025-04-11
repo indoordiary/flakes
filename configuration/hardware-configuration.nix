@@ -17,7 +17,7 @@
     { device = "/dev/disk/by-uuid/fa8d1ce5-cb3c-4f31-b37c-e4fcb67d24f1";
       fsType = "btrfs";
       options = [
-        "subvol=@"a
+        "subvol=@"
         "compress=zstd"
       ];
     };
