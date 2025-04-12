@@ -1,6 +1,11 @@
 { pkgs, lib, config, ... }:
 
 {
+imports = [
+    ./input/fcitx5.nix
+    ./services/
+  ];
+
   programs.hyprland = {
     enable = true;
     # xwayland.enable = true;
