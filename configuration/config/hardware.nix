@@ -19,10 +19,10 @@
     };
 
     cpu.amd.updateMicrocode = true;
-  };
 
-  enableAllFirmware = true;
-  enableRedistributableFirmware = true;
+    enableAllFirmware = true;
+    enableRedistributableFirmware = true;
+  };
 
   services.blueman.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
