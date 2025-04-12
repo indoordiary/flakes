@@ -3,7 +3,7 @@
 {
 imports = [
     ./input/fcitx5.nix
-    ./services/
+    ./services/qt6.nix
   ];
 
   programs.hyprland = {
