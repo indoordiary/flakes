@@ -6,7 +6,7 @@
     swapDevices = 2;
   };
 
-  swapDevices = lib.mkIf config.option.swapDevices [
+  swapDevices = [
     { device = "/dev/disk/by-uuid/69f6b62c-faaf-4c03-a15f-8c10d6af490a"; priority = 10; }
   ];
 
