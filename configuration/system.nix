@@ -13,8 +13,6 @@
       ./config/swap.nix
     ];
 
-  zramSwap = false;
-
   networking.hostName = "ChenHsi-Laptop";
   
   system = {
