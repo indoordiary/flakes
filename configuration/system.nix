@@ -18,7 +18,7 @@
     
     podman = false;
 
-    zram = false;
+    zramSwap = false;
 
     };
 
