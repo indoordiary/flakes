@@ -9,10 +9,7 @@
         useOSProber = true;
         efiSupport = true;
         theme = pkgs.catppuccin-grub.override{
-          flavor = {
-            light ="latte";
-            dark= "mocha";
-          };
+          flavor = "mocha";
         };
      };
   };
