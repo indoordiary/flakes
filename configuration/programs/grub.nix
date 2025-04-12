@@ -8,6 +8,9 @@
         device = "nodev";
         useOSProber = true;
         efiSupport = true;
+        theme = pkgs.catppuccin-grub.override{
+          variant = "mocha";
+        };
       };
   };
 }

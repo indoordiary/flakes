@@ -21,10 +21,6 @@
       };
     in
     {
-      devShells.${system}.default = pkgs.mkShell {
-        packages = with pkgs; [ git nixpkgs-fmt ];
-      };
-
       nixosConfigurations.RBP = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs zen-browser; };
@@ -33,8 +29,6 @@
           ./configuration/system.nix
           ./configuration/user.nix
           ./configuration/programs.nix
-          ./configuration/wm/hypr.nix
-          ./configuration/device/RBP152022.nix
 
           ({ 
             imports = [ home-manager.nixosModules.home-manager ];
@@ -49,6 +43,15 @@
 
           revisionInfo
         ];
+      };
+      devShells.${system}.default = pkgs.mkShell {
+        packages = with pkgs; [ 
+          just
+          nix-output-monitor
+          age
+          sops
+          nvfetcher
+          ];
       };
     };
 }

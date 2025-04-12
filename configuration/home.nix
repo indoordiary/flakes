@@ -19,6 +19,11 @@ in
     userDirs.enable = true;
   };
 
+  programs.hyprland = {
+    enable = true;
+    package = pkgs.hyprland;
+  };
+
   programs.obs-studio = {
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [

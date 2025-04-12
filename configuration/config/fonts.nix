@@ -8,6 +8,10 @@
       font-awesome
       sarasa-gothic
       twemoji-color-font
+      inconsolata
+      fira-code
+      noto-fonts-cjk-sans
+      nerd-fonts.symbols-only
     ];
     fontconfig.defaultFonts = {
       serif  = [ "Sarasa Gothic SC regular" ];

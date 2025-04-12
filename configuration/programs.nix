@@ -16,6 +16,7 @@
     ./programs/firefox.nix
     ./programs/install-system.nix
     ./programs/others.nix
+    ./virtualisation.nix
   ];
   
   nixpkgs.config.permittedInsecurePackages = [

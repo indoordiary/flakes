@@ -1,19 +1,20 @@
 { config, ... }:
 {
   zramSwap = {
-    enable = true;
+    enable = config.option.zram or false;
     priority = 100;
     swapDevices = 2;
   };
 
-  swapDevices = [
-    { device = "/dev/disk/by-partuuid/8f1d2eb8-2ed9-4ffa-8b69-d1280109aa2"; priority = 10; }
+  swapDevices = lib.mkIf config.option.swapDevices [
+    { device = "/dev/disk/by-uuid/69f6b62c-faaf-4c03-a15f-8c10d6af490a"; priority = 10; }
   ];
 
- services.logind.extraConfig = ''
+  services.logind.extraConfig = lib.mkIf (config.option.hibernate) ''
     HandleLidSwitch=hibernate
     HandleLidSwitchExternalPower=hibernate
     HandleLidSwitchDocked=ignore
     HibernateKeyIgnoreInhibited=no
   '';
+
 }

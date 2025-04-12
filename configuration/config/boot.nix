@@ -19,7 +19,7 @@
     kernelParams = [ "amd_pstate=active" ];
 
     tmp = {
-      useTmpfs = false;
+      useTmpfs = true;
       cleanOnBoot = true;
     };
   };

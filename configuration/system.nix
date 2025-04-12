@@ -11,7 +11,18 @@
       ./config/services.nix
       ./config/security.nix
       ./config/swap.nix
+      ./virtualisation.nix
     ];
+  
+  optional = {
+    
+    podman = false;
+
+    zram = fals;
+    swapDevices = true;
+    hibernate =true;
+
+    };
 
   networking.hostName = "ChenHsi-Laptop";
   
