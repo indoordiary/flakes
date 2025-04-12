@@ -18,7 +18,9 @@
     ./programs/others.nix
     ./programs/virtualisation.nix
   ];
-  
+
+  option.pdom =false;
+
   nixpkgs.config.permittedInsecurePackages = [
 
   ];
