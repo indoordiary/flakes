@@ -19,7 +19,7 @@
     ./programs/virtualisation.nix
   ];
 
-  option.pdom =false;
+  option.podman =false;
 
   nixpkgs.config.permittedInsecurePackages = [
 
