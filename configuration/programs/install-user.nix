@@ -9,7 +9,7 @@
     mako tofi waybar alacritty
 
     # Social 
-    qq wechat-uos telegra-desktop 
+    qq wechat-uos telegram-desktop 
 
     # dev
     vscode typora
