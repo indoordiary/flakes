@@ -18,7 +18,7 @@
     
     podman = false;
 
-    zram = fals;
+    zram = false;
     swapDevices = true;
     hibernate =true;
 
