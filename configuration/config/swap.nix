@@ -1,7 +1,6 @@
 { config, ... }:
 {
   zramSwap = {
-    enable = config.option.zram or false;
     priority = 100;
     swapDevices = 2;
   };
