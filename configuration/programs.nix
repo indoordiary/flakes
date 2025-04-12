@@ -19,8 +19,6 @@
     ./programs/virtualisation.nix
   ];
 
-  option.podman =false;
-
   nixpkgs.config.permittedInsecurePackages = [
 
   ];
