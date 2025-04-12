@@ -5,6 +5,11 @@
   ];
 
   home.packages = with pkgs; [
+    waybar
+    tofi
+    mako
+    alacritty
+
     qqmusic
     bilibili
 
