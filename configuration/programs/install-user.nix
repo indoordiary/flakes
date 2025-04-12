@@ -5,24 +5,20 @@
   ];
 
   home.packages = with pkgs; [
-    hyprland 
-    waybar
-    tofi
-    mako
-    alacritty
+    # Desktop
+    mako tofi waybar alacritty
 
-    qqmusic
-    bilibili
+    # Social 
+    qq wechat-uos telegra-desktop 
 
-    qq
-    wechat-uos
-    telegram-desktop
-    
-    wpsoffice-cn
-    vscode-fhs
-    typora
+    # dev
+    vscode typora
 
-    inputs.zen-browser.packages.${pkgs.system}.beta
+    # Entertainment
+    bilibili qqmusic
+
+    # inpus
+    inputs.zen-browser.packages."${system}".beta
   ];
 }
 
