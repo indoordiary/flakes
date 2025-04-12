@@ -13,14 +13,8 @@
       ./config/swap.nix
       ./virtualisation.nix
     ];
-  
-  optional = {
-    
-    podman = false;
 
-    zramSwap = false;
-
-    };
+  zramSwap = false;
 
   networking.hostName = "ChenHsi-Laptop";
   
