@@ -10,7 +10,7 @@
     { device = "/dev/disk/by-uuid/69f6b62c-faaf-4c03-a15f-8c10d6af490a"; priority = 10; }
   ];
 
-  services.logind.extraConfig = lib.mkIf (config.option.hibernate) ''
+  services.logind.extraConfig = ''
     HandleLidSwitch=hibernate
     HandleLidSwitchExternalPower=hibernate
     HandleLidSwitchDocked=ignore
