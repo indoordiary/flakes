@@ -11,7 +11,6 @@
       ./config/services.nix
       ./config/security.nix
       ./config/swap.nix
-      ./virtualisation.nix
     ];
 
   zramSwap = false;
