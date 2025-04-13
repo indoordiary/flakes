@@ -1,14 +1,12 @@
 {
   lib,
   config,
-  pkgs,
   ...
 }:
 let
   font_family = "${config.profile.font} 10";
 in
 {
-  catppuccin.hyprlock.enable = true;
   programs.hyprlock = {
     enable = true;
 
