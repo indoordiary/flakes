@@ -3,7 +3,7 @@
 {
 imports = [
     ./input/fcitx5.nix
-    ./input/qt6ct.nix
+    ./services/qt6ct.nix
   ];
 
   environment.systemPackages = with pkgs;[
