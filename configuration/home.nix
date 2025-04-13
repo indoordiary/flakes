@@ -15,8 +15,6 @@ in
 
   fonts.fontconfig.enable = true;
 
-xdg.portal ={
-   enable = true;
 xdg.portal = {
     enable = true;
     wlr.enable = true;  # 如果使用 Wayland 合成器 (Hyprland/Sway)
