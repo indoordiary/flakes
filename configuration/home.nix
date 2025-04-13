@@ -5,6 +5,7 @@ in
 {
   imports = [
     ./programs/install-user.nix
+    ./wm/hyprland.nix
   ];
 
   programs.home-manager.enable = true;
