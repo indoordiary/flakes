@@ -6,7 +6,7 @@
     git fastfetch xorg.xrandr wl-clipboard wlr-randr
 
     # Tools
-    unzip unrar p7zip sof-firmware
+    unzip unrar p7zip sof-firmware killall
     
   ];
 }
