@@ -4,7 +4,7 @@
   ...
 }:
 let
-  cursor = "pkgs.catppuccin-cursors.mochaMauve";
+  cursor = "mochaMauve";
   cursorPackage = pkgs.catppuccin-cursors;
 in
 {
