@@ -17,7 +17,7 @@ let
     ) 10
   );
 in
-
+{
 wayland.windowManager.hyprland = {
     settings = {
       monitor = [
@@ -129,4 +129,5 @@ wayland.windowManager.hyprland = {
       # will reset the submap, meaning end the current one and return to the global one
       submap = reset
     '';
+  };
 }
