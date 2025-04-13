@@ -1,8 +1,9 @@
-{ config, pkgs,... }:
+{ lib, config, pkgs,... }:
 
 {
   imports = [
     ./input/fcitx5/default.nix
+    ./qt6ct.nix
   ];
 
   environment.systemPackages = with pkgs; [
