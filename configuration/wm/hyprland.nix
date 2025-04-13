@@ -71,6 +71,11 @@ imports = [
     };
   };
 
+  services.xserver.displayManager.sessionCommands = ''
+    export HYPRLAND_LOG_WLR=1
+    export WLR_DRM_NO_ATOMIC=1
+ '';
+
   networking.networkmanager.enable =true;
 
   # programs.hyprlock.enable = true;
