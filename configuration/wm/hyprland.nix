@@ -30,7 +30,6 @@ imports = [
     networkmanagerapplet 
     coreutils
     gnused
-    hyprctl
   ];
 
   programs.hyprland = {
