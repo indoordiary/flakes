@@ -12,8 +12,6 @@
       brightnessctl
       pavucontrol
       pipewire
-      alsa-lib
-      pulseaudio
       wireplumber
       hyprpaper
       hyprlock
@@ -26,7 +24,7 @@
       gvfs
       gtk4
       seahorse
-      gnome.gnome-keyrings
+      gnome-keyring
       libsForQt5.qt5ct
       qt6.qtwayland
       libsForQt5.qtwayland
