@@ -17,6 +17,7 @@
     ./programs/install-system.nix
     ./programs/others.nix
     ./programs/virtualisation.nix
+    ./programs/xdg.nix
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
