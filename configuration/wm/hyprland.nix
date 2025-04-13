@@ -17,7 +17,6 @@ imports = [
     nautilus
     kdePackages.polkit-kde-agent-1
     libsForQt5.qt5ct
-    qt6ct
     vlc
     qemu
     fcitx5-with-addons
