@@ -15,7 +15,6 @@ in
     ./rules.nix
     ./settings.nix
   ];
-  config = lib.mkIf config.optional.hypr.enable {
     home.packages = with pkgs; [
       networkmanagerapplet
       qt6.qtwayland
@@ -51,5 +50,4 @@ in
     wayland.windowManager.hyprland = {
       enable = true;
     };
-  };
 }
