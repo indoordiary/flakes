@@ -18,11 +18,12 @@ let
   );
 in
 
-wayland.windowManager.hyprland = {
+lib.mkIf config.optional.hypr.enable {
+  wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "DP-1, 2560x1440@144Hz, auto, 1.25"
-        "eDP-1, 3200x2000@90Hz, 0x0, auto, 2"
+        "DP-1, preferred, auto, 2"
+        "eDP-1, preferred, 0x0, auto"
       ];
 
       # mouse movements
@@ -115,7 +116,6 @@ wayland.windowManager.hyprland = {
 
     extraConfig = ''
       # Resize submap
-      bind = ,XF86PowerOff, exec, systemctl suspend
       # will switch to a submap called resize
       bind = $altMod, r, submap, resize
       # will start a submap called "resize"
@@ -130,4 +130,5 @@ wayland.windowManager.hyprland = {
       # will reset the submap, meaning end the current one and return to the global one
       submap = reset
     '';
+  };
 }
