@@ -13,6 +13,11 @@ imports = [
     jq
     blight
     obs-cli
+    alacritty
+    waybar
+    rofi
+    nautilus
+    networkmanagerapplet
   ];
 
   programs.hyprland = {
