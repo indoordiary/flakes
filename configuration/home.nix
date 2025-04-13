@@ -15,6 +15,16 @@ in
 
   fonts.fontconfig.enable = true;
 
+xdg.portal = {
+    enable = true;
+
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-hyprland
+      xdg-desktop-portal-gtk
+     xdg-desktop-portal-wlr
+    ];
+  };
+
   home.sessionVariables = {
     XDG_CURRENT_DESKTOP = "Hyprland";
     NIXOS_OZONE_WL = "1";
