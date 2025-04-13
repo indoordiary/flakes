@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   config,
   ...
 }:
@@ -13,8 +12,7 @@ let
     fi
   '';
 in
-
-lib.mkIf config.optional.hypr.enable {
+ {
   # screen idle
   services.hypridle = {
     enable = true;
@@ -29,5 +27,4 @@ lib.mkIf config.optional.hypr.enable {
       #   }
       # ];
     };
-  };
 }
