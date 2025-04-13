@@ -3,7 +3,7 @@ let
   pointer = config.home.pointerCursor;
   cursorName = "Bibata-Modern-Classic-Hyprcursor";
 in
-
+{
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$altMod" = "ALT";
@@ -136,4 +136,5 @@ in
     xwayland.force_zero_scaling = true;
 
     debug.disable_logs = false;
+  };
 }
