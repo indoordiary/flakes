@@ -17,9 +17,8 @@ in
 
 xdg.portal = {
     enable = true;
-    wlr.enable = true;  # 如果使用 Wayland 合成器 (Hyprland/Sway)
+    wlr.enable = true;
     
-    # 至少选择一个门户实现
     extraPortals = with pkgs; [
       xdg-desktop-portal-wlr
       xdg-desktop-portal-gtk
