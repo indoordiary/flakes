@@ -23,6 +23,7 @@ xdg.portal = {
       xdg-desktop-portal-gtk
      xdg-desktop-portal-wlr
     ];
+    config.common.default = ["hyprland" "gtk"];
   };
 
   home.sessionVariables = {
