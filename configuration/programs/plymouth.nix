@@ -2,7 +2,7 @@
   boot = {
 
     plymouth = {
-      enable = false;
+      enable = true;
     };
 
     # Enable "Silent Boot"
