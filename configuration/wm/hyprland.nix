@@ -48,7 +48,7 @@ imports = [
     XCURSOR_SIZE ="32";
     QT_QPA_PLATFORMTHEME="qt5ct";
     SDL_IMMODULE ="fcitx";
-    NIXOS_OZONE_WL="7";
+    NIXOS_OZONE_WL="1";
   };
 
   services = {
