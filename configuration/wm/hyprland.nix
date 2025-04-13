@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ config, ... }:
 
 {
   imports = [
@@ -10,9 +10,5 @@
     ./hypr/hypridle.nix
     ./hypr/hyprpaper.nix
     ./hypr/polkit-agent.nix
-  ];
-
-  packages = with pkgs; [
-    catppuccin waybar mako
   ];
 }
