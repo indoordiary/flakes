@@ -7,16 +7,25 @@ imports = [
   ];
 
   environment.systemPackages = with pkgs;[
+    libsForQt5.qt5.qtwayland
+    kdePackages.qtwayland
+    pyprland
+    hypridle
+    hyprpaper
+    waypaper
+    hyprshot
+    hyprpicker
+    hyprcursor
+    hyprlock
     hyprland
     xwayland 
     hyprpaper
+    hyprshade
     alacritty
     waybar
     tofi
     mako 
     nautilus
-    kdePackages.polkit-kde-agent-1
-    libsForQt5.qt5ct
     vlc
     qemu
     fcitx5-with-addons
