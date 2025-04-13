@@ -25,6 +25,22 @@ imports = [
     xwayland.enable = true;
   };
 
+  services ={
+    dbus.enable =true;
+    pipewire =[
+      enable = true;
+      alsa.enable = true;
+      pulse.enable =true;
+    };
+    xserver ={
+      enable =true;
+      layout = "Us";
+      xkbVariant= ";
+    };
+  };
+
+  pulseaudio.enable = false;
+
   networking.networkmanager.enable =true;
 
   # programs.hyprlock.enable = true;
