@@ -25,6 +25,7 @@
       gtk4
       seahorse
       gnome-keyring
+      qt6.wayland 
       libsForQt5.qt5ct
       libsForQt5.qtwayland
       xdg-desktop-portal-gtk
