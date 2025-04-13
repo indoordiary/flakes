@@ -38,7 +38,7 @@ imports = [
     xwayland.enable = true;
   };
 
-  il8n.inputMethod =[
+  il8n.inputMethod = {
     enabled = "fcitx5";
     fcitx5.addons = with pkgs;[ fcitx5-chinese-addons ];
   };
