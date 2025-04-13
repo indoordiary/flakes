@@ -5,14 +5,12 @@
   ...
 }:
 
-lib.mkIf config.optional.wm {
-  catppuccin.gtk.enable = true;
-  catppuccin.gtk.icon.enable = true;
+{
   gtk = {
     enable = true;
 
     font = {
-      name = "${config.profile.font}";
+      name = "JetBrains Mono";
       # size = 11;
     };
   };
@@ -21,7 +19,7 @@ lib.mkIf config.optional.wm {
     enable = true;
     settings = {
       "org/gnome/desktop/interface" = {
-        color-scheme = if config.profile.darkMode then "prefer-dark" else "prefer-light";
+        color-scheme = "prefer-light";
       };
     };
   };

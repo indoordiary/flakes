@@ -5,6 +5,7 @@ in
 {
   imports = [
     ./programs/install-user.nix
+    ./wm/hyprland.nix
   ];
 
   programs.home-manager.enable = true;
@@ -13,6 +14,11 @@ in
   home.stateVersion = "25.05";
 
   fonts.fontconfig.enable = true;
+
+  xdg = {
+    enable = true;
+    userDirs.enable = true;
+  };
 
   programs.obs-studio = {
     enable = true;

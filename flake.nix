@@ -29,7 +29,6 @@
           ./configuration/system.nix
           ./configuration/user.nix
           ./configuration/programs.nix
-          ./configuration/wm/hyprland.nix
 
           ({ 
             imports = [ home-manager.nixosModules.home-manager ];
