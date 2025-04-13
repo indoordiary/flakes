@@ -1,10 +1,9 @@
-{ lib, config, ... }:
+{ config, ... }:
 let
   pointer = config.home.pointerCursor;
   cursorName = "Bibata-Modern-Classic-Hyprcursor";
 in
 
-lib.mkIf config.optional.hypr.enable {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$altMod" = "ALT";
@@ -137,5 +136,4 @@ lib.mkIf config.optional.hypr.enable {
     xwayland.force_zero_scaling = true;
 
     debug.disable_logs = false;
-  };
 }
