@@ -15,7 +15,7 @@ imports = [
     tofi
     mako 
     nautilus
-    polkit-kde-agent-1
+    kdePackages.polkit-kde-agent-1
     qt5ct
     qt6ct
     vlc
