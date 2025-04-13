@@ -7,7 +7,7 @@ imports = [
   ];
 
   environment.systemPackages = with pkgs;[
-    hyprland 
+    hyprland
     xwayland 
     hyprpaper
     alacritty
