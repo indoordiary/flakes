@@ -14,6 +14,13 @@ in
 
   fonts.fontconfig.enable = true;
 
+  xdg = {
+    enable = true;
+    userDirs.enable = true;
+    configFile = {
+    };
+  };
+
   programs.obs-studio = {
     enable = true;
     plugins = with pkgs.obs-studio-plugins; [
