@@ -11,7 +11,10 @@
         theme = pkgs.catppuccin-grub.override{
           flavor = "mocha";
         };
-        gfxmode = "1024x768";
+        extraConfig = ''
+          GRUB_GFXMODE=1024x768
+          GRUB_GFXPAYLOAD_LINUX=keep
+        '';
      };
   };
 }
