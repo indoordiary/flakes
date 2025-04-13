@@ -4,7 +4,7 @@
   ...
 }:
 let
-  font_family = "${config.profile.font} 10";
+  font_family = "'JetBrains Mono' 10";
 in
 {
   programs.hyprlock = {
