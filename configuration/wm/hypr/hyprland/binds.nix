@@ -47,7 +47,7 @@ wayland.windowManager.hyprland = {
           "$mainMod SHIFT, M, exec, hyprctl keyword ${monocle} $(($(hyprctl getoption ${monocle} -j | jaq -r '.int') ^ 1))"
 
           # terminal
-          "$mainMod, Return, exec, ${config.profile.terminal}"
+          "$mainMod, Return, exec, ${fish}"
           "$mainMod, d, exec, neovide"
 
           # music player
@@ -56,7 +56,7 @@ wayland.windowManager.hyprland = {
           # launcher
           "$mainMod, Space, exec, anyrun"
           # browser
-          "$mainMod, B, exec, ${config.profile.browser}"
+          "$mainMod, B, exec, ${firefox}"
           # file manager
           "$mainMod, E, exec, nautilus"
           # logout menu
