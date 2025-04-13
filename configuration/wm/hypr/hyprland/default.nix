@@ -15,6 +15,7 @@ in
     ./settings.nix
   ];
     home.packages = with pkgs; [
+      catppuccin waybar mako
       networkmanagerapplet
       qt6.qtwayland
       libsForQt5.qt5.qtwayland
