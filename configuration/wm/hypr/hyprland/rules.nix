@@ -1,5 +1,5 @@
 { config, ... }:
-
+{
   wayland.windowManager.hyprland.settings = {
     # layer rules
     layerrule =
@@ -104,4 +104,5 @@
         ) 5
       )
       ++ [ "eDP-1, 1" ];
+  };
 }
