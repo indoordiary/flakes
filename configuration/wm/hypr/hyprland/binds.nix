@@ -2,8 +2,8 @@
 
 let
   #定义程度按键
-  altMod = "SUPER";
-  mainMod ="ALT";
+  mainMod = "SUPER";
+  altMod ="ALT";
   # 应用程序路径定义
   terminal = "${pkgs.fish}/bin/fish";  # 使用 fish shell 作为终端
   editor = "${pkgs.neovide}/bin/neovide";
