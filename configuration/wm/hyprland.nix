@@ -12,8 +12,8 @@
       brightnessctl
       pavucontrol
       pipewire
-      pipewire.pulse
-      pipewire.alsa
+      alsa-lib
+      pulseaudio
       wireplumber
       hyprpaper
       hyprlock
