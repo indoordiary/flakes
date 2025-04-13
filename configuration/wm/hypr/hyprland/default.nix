@@ -4,8 +4,8 @@
   ...
 }:
 let
-  cursor = "Bibata-Modern-Classic-Hyprcursor";
-  cursorPackage = pkgs.catppuccin-cursors.mochaMauve;
+  cursor = "pkgs.catppuccin-cursors.mochaMauve";
+  cursorPackage = pkgs.catppuccin-cursors;
 in
 {
   imports = [
