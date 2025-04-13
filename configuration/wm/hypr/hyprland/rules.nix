@@ -1,6 +1,5 @@
-{ lib, config, ... }:
+{ config, ... }:
 
-lib.mkIf config.optional.hypr.enable {
   wayland.windowManager.hyprland.settings = {
     # layer rules
     layerrule =
@@ -105,5 +104,4 @@ lib.mkIf config.optional.hypr.enable {
         ) 5
       )
       ++ [ "eDP-1, 1" ];
-  };
 }
