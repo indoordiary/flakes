@@ -3,7 +3,6 @@
 {
 imports = [
     ./input/fcitx5.nix
-    ./services/qt6ct.nix
   ];
 
   environment.systemPackages = with pkgs;[
@@ -47,7 +46,7 @@ imports = [
 
   environment.sessionVariables= {
     XCURSOR_SIZE ="32";
-    QT_QPA_PLATFORMTHEME="qt6ct";
+    QT_QPA_PLATFORMTHEME="qt5ct";
     SDL_IMMODULE ="fcitx";
     NIXOS_OZONE_WL="1";
   };
