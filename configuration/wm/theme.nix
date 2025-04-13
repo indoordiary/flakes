@@ -19,7 +19,7 @@
     enable = true;
     settings = {
       "org/gnome/desktop/interface" = {
-        color-scheme = if config.profile.darkMode then "prefer-dark" else "prefer-light";
+        color-scheme = "prefer-light";
       };
     };
   };
