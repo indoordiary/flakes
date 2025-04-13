@@ -15,7 +15,12 @@ in
 
   fonts.fontconfig.enable = true;
 
-xdg.portal = {
+  programs.hyprland = {
+    enable = true;
+    portalPackage = pkgs.xdg-desktop-portal-hyprland;
+  };
+
+  xdg.portal = {
     enable = true;
 
     extraPortals = with pkgs; [
