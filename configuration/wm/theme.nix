@@ -10,7 +10,7 @@
     enable = true;
 
     font = {
-      name = "${config.profile.font}";
+      name = "JetBrains Mono";
       # size = 11;
     };
   };
