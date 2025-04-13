@@ -38,12 +38,6 @@ imports = [
     xwayland.enable = true;
   };
 
-  environment.etc."xdg/weston/weston.ini".text = ''
-      [core]
-      require-input-control=false
-      [shell]
-      panel-location=none
-  '';
 
   il8n.inputMethod =[
     enabled = "fcitx5";
