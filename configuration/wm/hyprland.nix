@@ -39,7 +39,7 @@ imports = [
     };
   };
 
-  pulseaudio.enable = false;
+  hardware.pulseaudio.enable = false;
 
   networking.networkmanager.enable =true;
 
