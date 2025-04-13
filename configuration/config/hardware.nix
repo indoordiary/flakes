@@ -8,7 +8,7 @@
     };
 
     pulseaudio = {
-      enable = false
+      enable = false;
     };
 
     graphics = {
