@@ -12,8 +12,6 @@
     ./hypr/polkit-agent.nix
   ];
 
-  config.optional.hypr.enable = true;
-
   environment.systemPackages = with pkgs; [
     catppuccin waybar mako
   ];
