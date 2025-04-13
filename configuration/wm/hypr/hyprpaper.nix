@@ -5,7 +5,7 @@
   ...
 }:
 
-lib.mkIf config.optional.hypr.enable {
+ {
   xdg.configFile."hypr/hyprpaper.conf".text = ''
     preload = ${config.profile.wallpaper}
     wallpaper = , ${config.profile.wallpaper}
