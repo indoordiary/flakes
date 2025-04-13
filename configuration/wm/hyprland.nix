@@ -15,7 +15,7 @@ imports = [
     tofi
     mako 
     nautilus
-    polkit-kde-agent
+    polkit-kde-agent-1
     qt5ct
     qt6ct
     vlc
@@ -52,6 +52,12 @@ imports = [
       alsa.enable = true;
       pulse.enable =true;
     };
+  };
+  environment.sessionVariables = {
+    XCURSOR_SIZE = "32";
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+    SDL_IM_MODULE = "fcitx";
+    NIXOS_OZONE_WL = "1";
   };
 
   services.xserver.displayManager.sessionCommands = ''
