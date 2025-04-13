@@ -5,7 +5,7 @@
     type = "fcitx5";
     fcitx5 = {
       addons = with pkgs; [
-        fcitx5-rime fcitx5-moegril
+        fcitx5-rime fcitx5-moegirl
       ];
       waylandFrontend = true;
     };
