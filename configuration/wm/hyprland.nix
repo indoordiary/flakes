@@ -6,10 +6,21 @@ imports = [
     ./services/qt6ct.nix
   ];
 
+  environment.systemPackages = with pkgs;[
+    grim
+    slurp
+    wl-clipboard
+    jq
+    blight
+    obs-cli
+  ];
+
   programs.hyprland = {
     enable = true;
-    # xwayland.enable = true;
+    xwayland.enable = true;
   };
 
-  programs.hyprlock.enable = true;
+  # programs.hyprlock.enable = true;
+
+  # programs.hypapers.enable = true;
 }
