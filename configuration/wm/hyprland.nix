@@ -1,4 +1,4 @@
-{ lib, pkgs, config, ... }:
+{ pkgs, config, ... }:
 
 {
   imports = [
@@ -11,7 +11,8 @@
     ./hypr/hyprpaper.nix
     ./hypr/polkit-agent.nix
   ];
-  optional.hypr.enable = true;
+
+  config.optional.hypr.enable = true;
 
   environment.systemPackages = with pkgs; [
     catppuccin waybar mako
