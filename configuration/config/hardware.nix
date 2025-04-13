@@ -7,7 +7,7 @@
       package = pkgs.bluez;
     };
 
-    pulseaudio {
+    pulseaudio = {
       enable = false
     };
 
