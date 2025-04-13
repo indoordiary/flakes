@@ -3,7 +3,7 @@
 {
 imports = [
     ./input/fcitx5.nix
-    ./input/qt5ct.nix
+    ./input/qt6ct.nix
   ];
 
   environment.systemPackages = with pkgs;[
@@ -17,6 +17,7 @@ imports = [
     nautilus
     polkit-kde-agent
     qt5ct
+    qt6ct
     vlc
     qemu
     fcitx5-with-addons
