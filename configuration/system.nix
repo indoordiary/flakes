@@ -11,9 +11,8 @@
       ./config/services.nix
       ./config/security.nix
       ./config/swap.nix
+      ./config/network.nix
     ];
-
-  networking.hostName = "ChenHsi-Laptop";
   
   system = {
     autoUpgrade = {

@@ -1,24 +1,50 @@
 { config, pkgs, lib, ... }:
 {
-  fonts = lib.mkForce {
-    enableDefaultPackages = false;
+  fonts = {
+    enableDefaultPackages = true;
     fontconfig.enable = true;
     fontDir.enable = true;
+
     packages = with pkgs; [
-      font-awesome
-      sarasa-gothic
-      twemoji-color-font
+      # icon fonts
+      material-symbols
+
+      # Sans(Serif) fonts
+      libertinus
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-emoji
+      roboto
+      (google-fonts.override { fonts = [ "Inter" ]; })
+
+      # monospace fonts
+      jetbrains-mono
+
+      # nerdfonts
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.symbols-only
+
+      #custom
       inconsolata
       fira-code
-      noto-fonts-cjk-sans
-      nerd-fonts.symbols-only
-      dejavu_fonts
     ];
-    fontconfig.defaultFonts = {
-      serif  = [ "Sarasa Gothic SC regular" ];
-      sansSerif = [ "Sarasa Gothic SC regular" ];
-      monospace = [ "Sarasa Mono SC" ];
-      emoji = [ "Twitter Color Emoji Regular" ];
-    };
+
+    fontconfig.defaultFonts =
+      let
+        addAll = builtins.mapAttrs (_: v: v ++ [ "Noto Color Emoji" ]);
+      in
+      addAll {
+        serif = [
+          "Libertinus Serif"
+        ];
+        sansSerif = [
+          "Inter"
+        ];
+        monospace = [
+          "JetBrains Mono"
+        ];
+        emoji = [ ];
+      };
   };
 }
+
