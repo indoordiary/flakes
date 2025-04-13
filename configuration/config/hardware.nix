@@ -7,6 +7,10 @@
       package = pkgs.bluez;
     };
 
+    pulseaudio {
+      enable = false
+    };
+
     graphics = {
       enable = true;
       enable32Bit = true;
