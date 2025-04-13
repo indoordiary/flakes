@@ -8,8 +8,8 @@
         device = "nodev";
         useOSProber = true;
         efiSupport = true;
-      # theme = pkgs.catppuccin-grub.override { flavor = "mocha"; };
-      # gfxmodeEfi = "1024x768";
+        theme = pkgs.catppuccin-grub.override { flavor = "mocha"; };
+        gfxmodeEfi = "1024x768";
      };
   };
 }
