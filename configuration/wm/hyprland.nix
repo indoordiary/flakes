@@ -12,7 +12,7 @@
     ./hypr/polkit-agent.nix
   ];
 
-  environment.systemPackages = with pkgs; [
+  packages = with pkgs; [
     catppuccin waybar mako
   ];
 }
