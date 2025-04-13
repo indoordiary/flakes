@@ -5,8 +5,6 @@
   ];
 
   home.packages = with pkgs; [
-    # Desktop
-    mako tofi waybar alacritty
 
     # Social 
     qq wechat-uos telegram-desktop 
