@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 {
   imports = [
-    # ../wm/theme.nix
+    ../wm/theme.nix
   ];
 
   home.packages = with pkgs; [
