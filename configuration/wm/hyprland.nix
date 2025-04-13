@@ -26,7 +26,6 @@
       seahorse
       gnome-keyring
       libsForQt5.qt5ct
-      qt6.qtwayland
       libsForQt5.qtwayland
       xdg-desktop-portal-gtk
       uwsm
