@@ -16,6 +16,7 @@ in
   ];
     home.packages = with pkgs; [
       catppuccin waybar mako
+      xdg-desktop-portal-hyprland
       networkmanagerapplet
       qt6.qtwayland
       libsForQt5.qt5.qtwayland
