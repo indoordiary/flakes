@@ -12,6 +12,7 @@
       fira-code
       noto-fonts-cjk-sans
       nerd-fonts.symbols-only
+      dejavu_fonts
     ];
     fontconfig.defaultFonts = {
       serif  = [ "Sarasa Gothic SC regular" ];
