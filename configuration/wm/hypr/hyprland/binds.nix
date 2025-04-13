@@ -18,8 +18,7 @@ let
   );
 in
 
-lib.mkIf config.optional.hypr.enable {
-  wayland.windowManager.hyprland = {
+wayland.windowManager.hyprland = {
     settings = {
       monitor = [
         "DP-1, preferred, auto, 2"
@@ -130,5 +129,4 @@ lib.mkIf config.optional.hypr.enable {
       # will reset the submap, meaning end the current one and return to the global one
       submap = reset
     '';
-  };
 }
