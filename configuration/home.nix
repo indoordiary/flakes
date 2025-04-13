@@ -15,9 +15,9 @@ in
 
   fonts.fontconfig.enable = true;
 
-  home.sessionVariables = {
-    XDG_CURRENT_DESKTOP = "Hyprland";
-    NIXOS_OZONE_WL = "1";
+  xdg.portal = {
+    enable = true;
+
   };
 
   programs.obs-studio = {
