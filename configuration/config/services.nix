@@ -15,6 +15,15 @@
       interval = "weekly";
     };
 
+    logind = {
+      extraConfig = ''
+        HandlePowerKey=suspend  # 短按休眠
+        HandlePowerKeyLongPress=poweroff  #长按关机
+      '';
+      lidSwitch = "suspend";  # 合盖休眠
+};
+
+
     dbus.apparmor = "enabled";
     xserver.excludePackages = [ pkgs.xterm ];
 
