@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 let
-  # 定义主键位 (Super/Win键)
-  mainMod = "SUPER";
-  altMod = "ALT";
   
   # 应用程序路径定义
   terminal = "${pkgs.fish}/bin/fish";  # 使用 fish shell 作为终端
