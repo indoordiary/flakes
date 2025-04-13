@@ -25,6 +25,8 @@ imports = [
     xwayland.enable = true;
   };
 
+  networking.networkmanager.enable =true;
+
   # programs.hyprlock.enable = true;
 
   # programs.hypapers.enable = true;
