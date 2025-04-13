@@ -7,8 +7,8 @@
 
  {
   xdg.configFile."hypr/hyprpaper.conf".text = ''
-    preload = ${config.profile.wallpaper}
-    wallpaper = , ${config.profile.wallpaper}
+    preload = ~/Pictures/Wallpapers/Left.png
+    wallpaper = , JetBrains Mono
     ipc = off
   '';
 
