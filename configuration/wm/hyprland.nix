@@ -9,10 +9,11 @@ imports = [
   environment.systemPackages = with pkgs;[
     hyprland 
     xwayland 
-    hypaper
+    hyprpaper
     alacritty
     waybar
     tofi
+    mako 
     nautilus
     polkit-kde-agent
     qt5ct
