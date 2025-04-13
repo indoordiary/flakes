@@ -20,10 +20,7 @@ xdg.portal = {
 
     extraPortals = with pkgs; [
       xdg-desktop-portal-hyprland
-      xdg-desktop-portal-gtk
-     xdg-desktop-portal-wlr
     ];
-    config.common.default = ["hyprland" "gtk"];
   };
 
   home.sessionVariables = {
