@@ -24,7 +24,7 @@ imports = [
     grim
     slurp
     wl-clipboard
-    blight
+    brightnessctl
     obs-cli
     pulseaudio
     networkmanagerapplet 
