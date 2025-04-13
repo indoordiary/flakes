@@ -5,7 +5,7 @@
   ...
 }:
 
-lib.mkIf config.optional.wm {
+{
   catppuccin.gtk.enable = true;
   catppuccin.gtk.icon.enable = true;
   gtk = {
