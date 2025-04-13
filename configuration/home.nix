@@ -25,7 +25,7 @@ xdg.portal = {
     ];
   };
 
-  environment.sessionVariables = {
+  home.sessionVariables = {
     XDG_CURRENT_DESKTOP = "Hyprland";
     NIXOS_OZONE_WL = "1";
   };
