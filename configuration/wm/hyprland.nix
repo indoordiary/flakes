@@ -16,7 +16,7 @@ imports = [
     mako 
     nautilus
     kdePackages.polkit-kde-agent-1
-    qt5ct
+    libsForQt5.qt5ct
     qt6ct
     vlc
     qemu
