@@ -27,6 +27,9 @@ imports = [
     obs-cli
     pulseaudio
     networkmanagerapplet 
+    coreutils
+    gnused
+    hyprctl
   ];
 
   programs.hyprland = {
