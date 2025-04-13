@@ -45,7 +45,6 @@ in
       QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     };
 
-    catppuccin.hyprland.enable = true;
     wayland.windowManager.hyprland = {
       enable = true;
     };
