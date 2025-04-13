@@ -6,8 +6,6 @@
 }:
 
 {
-  catppuccin.gtk.enable = true;
-  catppuccin.gtk.icon.enable = true;
   gtk = {
     enable = true;
 
