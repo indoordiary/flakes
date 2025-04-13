@@ -1,16 +1,18 @@
 { pkgs, inputs, ... }:
 {
   imports = [
-    ../wm/theme.nix
+    # ../wm/theme.nix
   ];
 
   home.packages = with pkgs; [
+    #Utils
+    typora
 
     # Social 
     qq wechat-uos telegram-desktop 
 
     # dev
-    vscode typora
+    vscode-fhs
 
     # Entertainment
     bilibili qqmusic

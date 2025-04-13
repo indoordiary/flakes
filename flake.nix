@@ -21,7 +21,7 @@
       };
     in
     {
-      nixosConfigurations.RBP = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs zen-browser; };
 

@@ -11,7 +11,7 @@
         theme = pkgs.catppuccin-grub.override{
           flavor = "mocha";
         };
-        gfxmode = "1024x768";
+        gfxmodeEfi = "1024x768";
      };
   };
 }
