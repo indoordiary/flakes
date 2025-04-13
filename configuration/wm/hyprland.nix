@@ -38,7 +38,6 @@ imports = [
     xwayland.enable = true;
   };
 
-
   il8n.inputMethod =[
     enabled = "fcitx5";
     fcitx5.addons = with pkgs;[ fcitx5-chinese-addons ];
@@ -60,9 +59,9 @@ imports = [
   services = {
     dbus.enable = true;
     pipewire ={
-    enable =true;
-    alsa.enable = true;
-    pulse.enable =true;
+      enable =true;
+      alsa.enable = true;
+      pulse.enable =true;
     };
   };
 
