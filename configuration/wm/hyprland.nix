@@ -7,17 +7,26 @@ imports = [
   ];
 
   environment.systemPackages = with pkgs;[
+    hyprland 
+    xwayland 
+    hypaper
+    alacritty
+    waybar
+    tofi
+    nautilus
+    polkit-kde-agent
+    qt5ct
+    vlc
+    qemu
+    fcitx5-with-addons
+    jq
     grim
     slurp
     wl-clipboard
-    jq
     blight
     obs-cli
-    alacritty
-    waybar
-    rofi
-    nautilus
-    networkmanagerapplet
+    pulseaudio
+    networkmanagerapplet 
   ];
 
   programs.hyprland = {
@@ -25,18 +34,16 @@ imports = [
     xwayland.enable = true;
   };
 
-  services ={
-    dbus.enable =true;
-    pipewire =[
-      enable = true;
-      alsa.enable = true;
-      pulse.enable =true;
-    };
-    xserver ={
-      enable =true;
-      layout = "Us";
-      xkbVariant= ";
-    };
+  environment.etc."xdg/weston/weston.ini".text = ''
+      [core]
+      require-input-control=false
+      [shell]
+      panel-location=none
+  '';
+
+  il8n.inputMethod =[
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs;[ fcitx5-chinese-addons ];
   };
 
   environment.variables={
@@ -45,7 +52,21 @@ imports = [
     XMODIFIERS ="@im=fcitx";
   };
 
-  hardware.pulseaudio.enable = false;
+  environment.sessionVariables= {
+    XCURSOR_SIZE ="32";
+    QT_QPA_PLATFORMTHEME="qt5ct";
+    SDL_IMMODULE ="fcitx";
+    NIXOS_OZONE_WL="7";
+  };
+
+  services = {
+    dbus.enable = true;
+    pipewire ={
+    enable =true;
+    alsa.enable = true;
+    pulse.enable =true;
+    };
+  };
 
   networking.networkmanager.enable =true;
 
