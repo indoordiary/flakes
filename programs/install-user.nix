@@ -20,7 +20,7 @@
     qq wechat-uos telegram-desktop 
 
     # Editor
-    typora zed-editor Neovim
+    typora zed-editor neovim
 
     # Develop
     vscode-fhs 
