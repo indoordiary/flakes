@@ -3,10 +3,11 @@
   ...
 }: {
   home.packages = with pkgs; [
-    hyprland
     qt6.qtwayland
     libsForQt5.qt5.qtwayland
     libsForQt5.qt5ct
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
 
     waybar # the status bar
     swaybg # the wallpaper
