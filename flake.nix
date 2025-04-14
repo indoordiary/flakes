@@ -26,10 +26,8 @@
         specialArgs = { inherit inputs zen-browser; };
 
         modules = [
-          ./configuration/system.nix
-          ./configuration/user.nix
-          ./configuration/programs.nix
-          ./configuration/wm/hyprland.nix
+          ./system/default.nix
+          ./programs/default.nix
 
           ({ 
             imports = [ home-manager.nixosModules.home-manager ];
@@ -37,7 +35,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "backup";
-              users.chenhsi.imports = [ ./configuration/home.nix ];
+              users.chenhsi.imports = [ ./home/home.nix ];
               extraSpecialArgs = { inherit inputs zen-browser; };
             };
           })
