@@ -3,6 +3,6 @@
     ./fish.nix
     ./foot.nix
     ./kitty.nix
-    ./alacritty/default.nix
+    #./alacritty/default.nix
   ];
 }
