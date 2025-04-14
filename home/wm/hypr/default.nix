@@ -17,9 +17,6 @@
     GDK_BACKEND = "wayland";
   };
 
-  xsession.enable = true;
-  xsession.windowManager.hyprland.enable =true;
-
   xdg.configFile = {
     "hypr/mako" = {
       source = ./conf/mako;
