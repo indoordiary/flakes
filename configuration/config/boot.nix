@@ -4,6 +4,8 @@
     enableContainers = false;
 
     kernelPackages = pkgs.linuxPackages_xanmod;
+    
+    kernelParams = [ "amd_pstate=active" ];
 
     loader = {
       systemd-boot = {
@@ -15,8 +17,6 @@
         canTouchEfiVariables = true;
       };
     };
-
-    kernelParams = [ "amd_pstate=active" ];
 
     tmp = {
       useTmpfs = true;

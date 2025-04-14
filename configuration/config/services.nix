@@ -30,7 +30,5 @@
 
     dbus.apparmor = "enabled";
     xserver.excludePackages = [ pkgs.xterm ];
-
-    thermald.enable = true;
   };
 }

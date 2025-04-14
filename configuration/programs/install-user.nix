@@ -1,21 +1,21 @@
 { pkgs, inputs, ... }:
 {
   imports = [
-   # ../wm/theme.nix
+   ../wm/gtk.nix
   ];
 
   home.packages = with pkgs; [
     #Utils
-    typora
+    mihomo-party networkmanagerapplet 
 
     # Social 
     qq wechat-uos telegram-desktop 
 
     # dev
-    vscode-fhs
+    vscode-fhs typora zed-editor
 
     # Entertainment
-    bilibili qqmusic
+    bilibili qqmusic yesplaymusic
 
     # inpus
     inputs.zen-browser.packages."${system}".beta

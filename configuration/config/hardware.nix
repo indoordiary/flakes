@@ -4,12 +4,13 @@
   hardware = {
     bluetooth = {
       enable = true;
-      package = pkgs.bluez;
+      package = pkgs.bluez5-experimental;
     };
 
     graphics = {
       enable = true;
       enable32Bit = true;
+      mesa = true;
     };
 
     amdgpu = {
