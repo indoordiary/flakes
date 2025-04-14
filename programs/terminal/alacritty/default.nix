@@ -17,7 +17,6 @@
 
       font = {
         normal.family = "JetBrainsMono Nerd Font";
-        size = if pkgs.stdenv.isDarwin then 14 else 13;
       };
 
       # 修正 shell 配置结构
