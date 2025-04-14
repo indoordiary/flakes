@@ -24,6 +24,8 @@
 
     mako # notification
 
+    anyrun # apps menu 
+
     yad # a fork of zenity, for creating dialogs
 
     # audio
