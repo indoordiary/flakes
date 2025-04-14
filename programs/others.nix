@@ -14,6 +14,7 @@
       enable = true;
       binfmt = true;
     };
+    hyprland.enable = true; #hyprland桌面
   };
 
   virtualisation.waydroid.enable = true;
