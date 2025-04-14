@@ -18,7 +18,7 @@
   };
 
   xdg.configFile = {
-    "hypr/mako" = {
+    "mako" = {
       source = ./conf/mako;
       recursive = true;
     };
@@ -30,11 +30,11 @@
       source = ./conf/scripts;
       recursive = true;
     };
-    "hypr/waybar" = {
+    "waybar" = {
       source = ./conf/waybar;
       recursive = true;
     };
-    "hypr/wlogout" = {
+    "logout" = {
       source = ./conf/wlogout;
       recursive = true;
     };
