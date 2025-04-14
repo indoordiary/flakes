@@ -3,7 +3,7 @@
   programs.anyrun = {
     enable = true;
     config = {
-      plugins = with pkgs.anyrun.packages.${pkgs.system}; [
+      plugins = with pkgs.anyrun; [
         applications
         randr
         rink
