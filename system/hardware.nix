@@ -10,7 +10,6 @@
     graphics = {
       enable = true;
       enable32Bit = true;
-      mesa = true;
     };
 
     amdgpu = {
