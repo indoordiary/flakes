@@ -8,6 +8,9 @@
       alsa.support32Bit = true;
       wireplumber.enable = true;
     };
+
+    blueman.enable = true;
+
     pulseaudio.enable = false;
 
     fstrim = {
@@ -24,7 +27,6 @@
         HandleLidSwitchDocked=ignore  # 连接拓展坞时忽略盖子开关事件
         HibernateKeyIgnoreInhibited=no  #休眠键守护
       '';
-      lidSwitch = "suspend";  # 合盖休眠
 };
 
 
