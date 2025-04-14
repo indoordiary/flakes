@@ -15,7 +15,7 @@
     ./install-system.nix
     ./others.nix
     ./virtualisation.nix
-    ./terminal/default.nix
+    ./terminal/fish.nix
   ];
   
   nixpkgs.config.permittedInsecurePackages = [
