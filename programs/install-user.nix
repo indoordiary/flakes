@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }:
 {
   imports = [
-   ../wm/gtk.nix
   ];
 
   home.packages = with pkgs; [
