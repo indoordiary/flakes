@@ -9,13 +9,8 @@
 
     graphics = {
       enable = true;
-      enable32Bit = true;
-    };
-
-    opengl = {
-      enable = true;
       extraPackages  = with pkgs; [ mesa ];
-      driSupport32Bit = true;
+      enable32Bit = true;
       extraPackages32 = with pkgs.driversi686Linux;[ mesa ];
     };
 
