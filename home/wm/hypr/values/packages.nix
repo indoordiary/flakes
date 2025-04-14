@@ -17,7 +17,7 @@
     wl-clipboard # copying and pasting
     hyprpicker # color picker
     
-    pkgs-unstable.hyprshot # screen shot
+    pkgs.hyprshot # screen shot
     grim # taking screenshots
     slurp # selecting a region to screenshot
     wf-recorder # screen recording
