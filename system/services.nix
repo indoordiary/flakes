@@ -13,6 +13,8 @@
 
     pulseaudio.enable = false;
 
+    xserver.displayManager.gdm.enable = true; 
+
     fstrim = {
       enable = true;
       interval = "weekly";
