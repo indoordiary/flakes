@@ -14,7 +14,7 @@
     mpv bilibili
 
     # Music
-    qqmusic yesplaymusic
+    qqmusic
 
     # Social
     qq wechat-uos telegram-desktop 
