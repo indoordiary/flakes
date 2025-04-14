@@ -17,7 +17,7 @@
     GDK_BACKEND = "wayland";
   };
 
-  extraConfig = builtins.readFile ./conf/hyprland.conf;    
+  extraConfig = builtins.readFile "${./.}/conf/hyprland.conf";   
 
   xsession.enable = true;
   xsession.windowManager.hyprland.enable =true;
