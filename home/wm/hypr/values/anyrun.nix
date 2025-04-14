@@ -1,12 +1,9 @@
+{ pkgs, ... }:
 {
-  pkgs,
-  anyrun,
-  ...
-}: {
   programs.anyrun = {
     enable = true;
     config = {
-      plugins = with anyrun.packages.${pkgs.system}; [
+      plugins = with pkgs.anyrun.packages.${pkgs.system}; [
         applications
         randr
         rink
@@ -21,7 +18,6 @@
       closeOnClick = true;
     };
 
-    # custom css for anyrun, based on catppuccin-mocha
     extraCss = ''
       @define-color bg-col  rgba(30, 30, 46, 0.7);
       @define-color bg-col-light rgba(150, 220, 235, 0.7);
@@ -46,19 +42,17 @@
         color: @fg-col;
         background-color: @bg-col;
       }
-      /* anyrun's input window - Text */
+
       #entry {
         color: @fg-col;
         background-color: @bg-col;
       }
 
-      /* anyrun's ouput matches entries - Base */
       #match {
         color: @fg-col;
         background: @bg-col;
       }
 
-      /* anyrun's selected entry - Red */
       #match:selected {
         color: @fg-col2;
         background: @selected-col;
