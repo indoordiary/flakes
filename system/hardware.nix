@@ -14,7 +14,9 @@
 
     opengl = {
       enable = true;
+      extraPackages  = with pkgs [ mesa ];
       driSupport32Bit = true;
+      extraPackages32 = with pkgs.driversi686Liux;[ mesa ];
     };
 
     amdgpu = {
