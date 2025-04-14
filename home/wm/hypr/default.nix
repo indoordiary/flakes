@@ -25,7 +25,6 @@
       source = ./conf/mako;
       recursive = true;
     };
-  xdg.configFile = {
     "hypr/hyprland.conf" = {
       source = ./conf/hyprland.conf;
       recursive = true;
