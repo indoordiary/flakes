@@ -12,6 +12,11 @@
       enable32Bit = true;
     };
 
+    opengl = {
+      enable = true;
+      driSupport32Bit = true;
+    };
+
     amdgpu = {
       amdvlk.enable = true;
       initrd.enable = true;
