@@ -6,7 +6,7 @@ in
   imports = [
     ../programs/install-user.nix
     ./wm/hypr/default.nix
-    ./theme/gtk.nix
+    ./wm/theme/gtk.nix
   ];
 
   programs.home-manager.enable = true;
