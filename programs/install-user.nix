@@ -8,7 +8,7 @@
     mihomo-party networkmanagerapplet btop killall
 
     # File Manager
-    yazi thunar
+    yazi xfce.thunar
 
     # Media
     mpv bilibili
