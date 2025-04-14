@@ -3,7 +3,7 @@
 {
   imports = [
     ./values/packages.nix
-    ./values/anyrun.nix
+   # ./values/anyrun.nix
   ];
 
   home.sessionVariables = {
