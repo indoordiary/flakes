@@ -17,14 +17,6 @@
     GDK_BACKEND = "wayland";
   };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland 
-    ];
-  };
-
   xdg.configFile = {
     "hypr/mako" = {
       source = ./conf/mako;
