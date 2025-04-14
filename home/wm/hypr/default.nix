@@ -17,14 +17,17 @@
     GDK_BACKEND = "wayland";
   };
 
-  extraConfig = builtins.readFile "${./.}/conf/hyprland.conf";   
-
   xsession.enable = true;
   xsession.windowManager.hyprland.enable =true;
 
   xdg.configFile = {
     "hypr/mako" = {
       source = ./conf/mako;
+      recursive = true;
+    };
+  xdg.configFile = {
+    "hypr/hyprland.conf" = {
+      source = ./conf/hyprland.conf;
       recursive = true;
     };
     "hypr/scripts" = {
